@@ -18,7 +18,7 @@
       <p class= 'category'>Website</p>
       <div class= 'side_links'>
         <p><%= link_to 'Blog', root_path %></p>
-        <p id= 'about'><%= link_to 'About', root_path %></p>
+        <p><%= link_to 'About', about_path %></p>
       </div>
 
     <ul>
@@ -31,7 +31,7 @@
         </div>  
     </ul>
     <div class= 'side_links'>
-      <p class= 'sign_in'><%= link_to 'Admin Login', root_path %></p>
+      <p class=><%= link_to 'Admin Login', root_path %></p>
     </div>
   </div>
     </ul>
@@ -44,6 +44,8 @@
           <button class= 'button'><%= link_to 'Log Out', root_path %></button>
           <button class= 'button'><%= link_to 'New Post', new_post_path %></button>
         </div>
+       <div id="header_border">
+       </div> 
     </div>
 
     <% flash.each do |name, msg| %>
