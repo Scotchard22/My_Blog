@@ -133,5 +133,28 @@ a:active {
   color: #66a3ff;
 }
 
+.comment_name{
+  color: #66a3ff;
+  font-weight: bolder;
+  font-size: 12px;
+}
+
+.comment_body{
+  font-size: 16px; 
+}
+
+.comment_time{
+  font-size: 12px;
+
+}
+
+.border{
+  border-bottom: dashed 2px #b3d1ff;
+  padding-top: 50px;
+}
+
+.comment_header{
+  font-size: 18px;
+}
 
 
