@@ -13,3 +13,116 @@
  *= require_tree .
  *= require_self
  */
+
+.category{
+  font-size: 20px;
+  text-decoration: none;
+  color: #1a75ff;
+  padding-left: 70px;
+  padding-top: 60px;
+}
+
+.side_links{
+  font-weight: lighter;
+  padding-left: 100px;
+  padding-top: 5px;
+  font-size: 17
+}
+
+#sidebar{
+   line-height:30px;
+   background-color:#eff2f5;
+   height:645px;
+   width:250px;
+   float: left;
+   padding:5px; 
+   border-right: solid 1px; 
+}
+
+#header{
+  margin-left: 250px;
+  background-color:#eff2f5;
+  color:white;
+  text-align:center;
+  padding:30px;
+  height: 30px;
+  border-bottom: solid 2px;
+}
+
+.page_wrapper{
+  padding-left: 30px;
+  margin-top: 50px;
+  width:950px;
+  height: 400px;
+  color: black;
+    
+}
+
+.post_wrapper{
+  margin-left: 300px;
+  margin-right: 700px;
+  border-bottom: dashed 2px;
+  width:800px;
+}
+
+.view_wrapper{
+  margin-left: 300px;
+  margin-right: 700px;
+  width:800px;
+}
+
+.sign_in{
+  color: black;
+  font-weight: bold;
+  font-weight: lighter;
+}
+
+#about{
+  color: #66a3ff;
+}
+
+.title{
+  color:black;
+}
+
+.date{
+  color:black;
+}
+
+a:link {
+    text-decoration: none;
+    color: #66a3ff;
+}
+
+a:visited {
+    text-decoration: none !important;
+    color: #66a3ff;
+}
+
+a:hover {
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:active {
+    text-decoration: none;
+}
+
+
+#all_posts{
+  font-size: 20px;
+  font-weight: lighter;
+  float: left;
+  color: black;
+
+}
+
+.buttons{
+  float: right;
+
+}
+
+
+
+
+

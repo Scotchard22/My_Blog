@@ -10,30 +10,35 @@
   <div id= 'sidebar'>
     <div id= 'logo'>
       <%= link_to root_path do %>
-        <%= image_tag 'scot.jpg' %>
+        <% image_tag "" %>
       <% end %>
     </div>
 
     <ul>
-      <li class= 'category'>Website</li>
-      <li><%= link_to 'Blog', root_path %></li>
-      <li>About</li>
+      <p class= 'category'>Website</p>
+        <div class= 'side_links'>
+          <p><%= link_to 'Blog', root_path %></p>
+          <p id= 'about'>About</p>
+        </div>
     </ul>
 
     <ul>
-      <li class= 'category'>Social</li>
-      <li><a href='https://www.instagram.com/scot_chard/' target='blank'>Instagram</a></li>
-      <li><a href='https://github.com/Scotchard22' target='blank'>Github</a></li>
-      <li><a href='https://www.linkedin.com/in/scotchard' target='blank'>LinkedIn</a></li>
-      <li><a href='mailto:scot.c.chard@gmail.com'>Email</a></li>
+      <p class= 'category'>Social</p>
+        <div class= 'side_links'>
+          <p><a href='https://www.instagram.com/scot_chard/' target='blank'>Instagram</a></p>
+          <p><a href='https://github.com/Scotchard22' target='blank'>Github</a></p>
+          <p><a href='https://www.linkedin.com/in/scotchard' target='blank'>LinkedIn</a></p>
+          <p><a href='mailto:scot.c.chard@gmail.com'>Email</a></p>
+        </div>  
     </ul>
-
-    <p class= 'sign_in'> Admin Login</p>
+    <div class= 'side_links'>
+      <p class= 'sign_in'> Admin Login</p>
+    </div>
   </div>
 
   <div id="main_content">
     <div id="header">
-      <p> All Posts </p>
+      <header id= 'all_posts'> All Posts </header>
 
         <div class="buttons">
           <button class= 'button'><%= link_to 'New Post', new_post_path %></button>
