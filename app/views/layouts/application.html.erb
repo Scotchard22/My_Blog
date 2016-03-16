@@ -5,22 +5,21 @@
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/css/materialize.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 <body>
   <div id= 'sidebar'>
     <div id= 'logo'>
-      <%= link_to root_path do %>
-        <% image_tag "" %>
-      <% end %>
+      <img src= ''/>
     </div>
-
-    <ul>
+    
+    <ul id="slide-out" class="side-nav fixed">
       <p class= 'category'>Website</p>
-        <div class= 'side_links'>
-          <p><%= link_to 'Blog', root_path %></p>
-          <p id= 'about'>About</p>
-        </div>
-    </ul>
+      <div class= 'side_links'>
+        <p><%= link_to 'Blog', root_path %></p>
+        <p id= 'about'><%= link_to 'About', root_path %></p>
+      </div>
 
     <ul>
       <p class= 'category'>Social</p>
@@ -32,17 +31,18 @@
         </div>  
     </ul>
     <div class= 'side_links'>
-      <p class= 'sign_in'> Admin Login</p>
+      <p class= 'sign_in'><%= link_to 'Admin Login', root_path %></p>
     </div>
   </div>
+    </ul>
 
   <div id="main_content">
-    <div id="header">
-      <header id= 'all_posts'> All Posts </header>
+    <div class="header">
+      <header id= 'all_posts'><%= link_to 'All Posts', root_path %> </header>
 
         <div class="buttons">
+          <button class= 'button'><%= link_to 'Log Out', root_path %></button>
           <button class= 'button'><%= link_to 'New Post', new_post_path %></button>
-          <button class= 'button'> Log Out </button>
         </div>
     </div>
 
