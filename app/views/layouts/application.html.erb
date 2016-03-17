@@ -30,27 +30,31 @@
           <p><a href='mailto:scot.c.chard@gmail.com'>Email</a></p>
         </div>  
     </ul>
-    <div class= 'side_links'>
-      <p class=><%= link_to 'Admin Login', root_path %></p>
-    </div>
+    <% if !user_signed_in? %>
+      <div class= 'side_links'>
+        <p class=><%= link_to 'Admin Login', new_user_session_path %></p>
+      </div>
+    <% end %>  
   </div>
     </ul>
 
   <div id="main_content">
     <div class="header">
       <header id= 'all_posts'><%= link_to 'All Posts', root_path %> </header>
-
-        <div class="buttons">
-          <button class= 'button'><%= link_to 'Log Out', root_path %></button>
-          <button class= 'button'><%= link_to 'New Post', new_post_path %></button>
-        </div>
+        <% if user_signed_in? %>
+          <div class="buttons">
+            <button class= 'button'><%= link_to 'Log Out', destroy_user_session_path %></button>
+            <button class= 'button'><%= link_to 'New Post', new_post_path %></button>
+          </div>
+        <% end %>  
        <div id="header_border">
        </div> 
     </div>
-
-    <% flash.each do |name, msg| %>
-      <%= content_tag(:div, msg, class: 'alert') %>
-    <% end %>  
+    <div class="about_wrapper">
+      <% flash.each do |name, msg| %>
+        <%= content_tag(:div, msg, class: 'alert') %>
+      <% end %>  
+    </div>
     
     <%= yield %>
   </div>
