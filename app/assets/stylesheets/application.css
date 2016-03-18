@@ -14,17 +14,35 @@
  *= require_self
  */
 
+body {
+  font-family: 'Raleway', sans-serif;
+  background: url("scotheader.JPG") no-repeat center center fixed;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+}
+
+p{
+  color:white;
+}
+
+.side-nav{
+  background-color: black !important;
+  width:200px !important;
+}
+
 .category{
   font-size: 16px;
   text-decoration: none;
-  color: #1a75ff;
-  padding-left: 70px;
+  color: white;
+  padding-left: 50px;
 }
 
 
 .side_links{
   font-weight: lighter;
-  padding-left: 100px;
+  padding-left: 70px;
   font-size: 14px;
 }
 
@@ -54,7 +72,7 @@ padding-top: 50px;
 .post_wrapper{
   margin-left: 300px;
   margin-right: 700px;
-  border-bottom: dashed 2px #b3d1ff;
+  border-bottom: dashed 2px white;
   width:800px;
 }
 
@@ -67,21 +85,21 @@ padding-top: 50px;
 
 .title{
   font-size: 22px;
-  color:black;
+  color:white;
 }
 
 .date{
-  color:black;
+  color:white;
 }
 
 a:link {
     text-decoration: none;
-    color: #66a3ff;
+    color: white;
 }
 
 a:visited {
     text-decoration: none;
-    color: #66a3ff;
+    color: white;
 }
 
 a:hover {
@@ -98,14 +116,14 @@ a:active {
   font-size: 20px;
   font-weight: lighter;
   float: left;
-  color: black !important;
+  color: white !important;
 
 }
 
 .button{
   outline: none;
   background: transparent;
-  border: 1px solid #d6dce0;
+  border: 1px solid white;
   padding: .5em 1.5em;
   border-radius: 1.5em;
   float: right;
@@ -114,15 +132,17 @@ a:active {
 
 .submit{
   float: right;
-  background-color: #b3d1ff !important;
+  background-color: white !important;
+  color: black !important;
 }
 
 .post_header{
-  color: #66a3ff;
+  color: white;
 }
 
 .comment_name{
-  color: #66a3ff;
+  padding-top: 10px;
+  color: white;
   font-weight: bolder;
   font-size: 12px;
 }
@@ -137,12 +157,15 @@ a:active {
 }
 
 .border{
-  border-bottom: dashed 2px #b3d1ff;
+  border-bottom: dashed 2px white;
   padding-top: 50px;
 }
 
 .comment_header{
   font-size: 18px;
+  color: white;
 }
 
-
+.login_label{
+  color:white !important;
+}
