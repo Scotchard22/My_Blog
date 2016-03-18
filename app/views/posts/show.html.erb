@@ -3,10 +3,14 @@
     <%= @post.title %>
   </h1>  
 
-  <p>
+  <%= image_tag @post.image.url(:large) %>
+  <br>
+  <br>
+  <p class='post_body'>
     <%= @post.body %>
   </p>  
-
+  <br>
+  <br>
   <p class= 'date'>
     Submitted <%= time_ago_in_words(@post.created_at) %> ago
     <% if user_signed_in? %>
