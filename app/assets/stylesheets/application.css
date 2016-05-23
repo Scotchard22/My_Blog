@@ -16,26 +16,22 @@
 
 body {
   font-family: 'Raleway', sans-serif;
-  background: url("scotheader.JPG") no-repeat center center fixed;
-      -webkit-background-size: cover;
-      -moz-background-size: cover;
-      -o-background-size: cover;
-      background-size: cover;
+  background-color: #e6ffff;
 }
 
 p{
-  color:white;
+  color: #006666;
 }
 
 .side-nav{
-  background-color: black !important;
-  width:200px !important;
+  background-color: #006666 !important;
+  width: 200px !important;
 }
 
 .category{
   font-size: 16px;
   text-decoration: none;
-  color: white;
+  color: #b3ffb3 !important;
   padding-left: 50px;
 }
 
@@ -46,60 +42,66 @@ p{
   font-size: 14px;
 }
 
+.side_links a{
+  color: #e6ffe6 !important;
+}
 
 .header{
   margin-left: 240px;
-  color:white;
-  text-align:center;
-  padding:30px;
+  color: white;
+  text-align: center;
+  padding: 30px;
   height: 50px;
 }
 
+.header a{
+  color: #008000 !important;
+}
+
 #header_border{
-border-bottom:  grey  1px solid;
+border-bottom:  #006666  1px solid;
 padding-top: 50px;
 }
 
 .page_wrapper{
   padding-left: 30px;
   margin-top: 50px;
-  width:950px;
+  width: 950px;
   height: 400px;
   color: black;
-    
 }
 
 .post_wrapper{
   margin-left: 300px;
   margin-right: 700px;
-  border-bottom: dashed 2px white;
-  width:800px;
+  border-bottom: dashed 1px #006666;
+  width: 800px;
 }
 
 .view_wrapper{
   margin-top: 100px;
   margin-left: 300px;
   margin-right: 700px;
-  width:800px;
+  width: 800px;
 }
 
 .title{
   font-size: 26px;
-  color:white;
+  color: #006666;
 }
 
 .date{
-  color:white;
+  color: black;
 }
 
 a:link {
     text-decoration: none;
-    color: white;
+    color: #006666;
 }
 
 a:visited {
     text-decoration: none;
-    color: white;
+    color: #006666;
 }
 
 a:hover {
@@ -123,7 +125,7 @@ a:active {
 .button{
   outline: none;
   background: transparent;
-  border: 1px solid white;
+  border: 1px solid #008000;
   padding: .5em 1.5em;
   border-radius: 1.5em;
   float: right;
@@ -132,17 +134,18 @@ a:active {
 
 .submit{
   float: right;
-  background-color: white !important;
-  color: black !important;
+  background-color: #006666 !important;
+  color: white !important;
+  border-radius: 2px;
 }
 
 .post_header{
-  color: white;
+  color: #006666;
 }
 
 .comment_name{
   padding-top: 10px;
-  color: white;
+  color: #006666;
   font-weight: bolder;
   font-size: 12px;
 }
@@ -157,17 +160,17 @@ a:active {
 }
 
 .border{
-  border-bottom: dashed 2px white;
+  border-bottom: dashed 2px #006666 !important;
   padding-top: 50px;
 }
 
 .comment_header{
   font-size: 18px;
-  color: white;
+  color: #006666;
 }
 
 .login_label{
-  color:white !important;
+  color: #006666 !important;
 }
 
 .post_body{
