@@ -2,5 +2,3 @@
 
 require ::File.expand_path('../config/environment', __FILE__)
 run Rails.application
-
-web: bundle exec rackup config.ru -p $PORT
